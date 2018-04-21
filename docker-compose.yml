@@ -1,0 +1,9 @@
+version: '2'
+services:
+  crypt:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    volumes:
+      - ./src:/go/src/
+
